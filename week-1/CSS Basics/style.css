@@ -1,0 +1,56 @@
+/* div {
+    width: 50px;
+    height: 50px;
+    background-color: #e74c3c;
+  }
+
+body {
+  background-color: #ddd;
+}
+
+nav {
+  background-color: rgb(51, 51, 51);
+}
+
+ul li:first-child {
+  background-color: green;
+}
+
+.hero-image { 
+  width: 100%;
+} */
+
+.box {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+#first {
+  background-color: green;
+}
+#second {
+  background-color: red;
+}
+
+#container {
+  background-color: #c7c1c1;
+  width: 225px;
+  height: 140px;
+  margin: 0 auto;
+  box-shadow: 3px 3px 5px black;
+}
+
+.button {
+  background-color: greenyellow;
+  border: 2px solid green;
+}
+
+.prompt {
+  font-weight: bold;
+}
+
+input { 
+  height: 15px;
+}
