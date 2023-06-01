@@ -23,7 +23,7 @@
 .block {
     box-sizing: border-box;
     height: 100px;
-    width: calc(33.3%);
+    width: calc(100% / 3);
     display: inline-block;
     border: 3px solid;
 }
