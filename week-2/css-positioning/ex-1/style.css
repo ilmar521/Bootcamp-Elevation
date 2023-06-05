@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+}
+
+
+#block {
+    background-color: rgb(185, 184, 184);
+    width: 100px;
+    height: 40px;
+    margin: 0 auto;
+}

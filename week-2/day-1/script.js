@@ -35,8 +35,6 @@ function noo(a,b){
 function koo(d){
     var f = zoo(d) * 5.3;
     return f * 1.2;
-    console.log("1");
-    
 }
 
 var r = goo(5);
