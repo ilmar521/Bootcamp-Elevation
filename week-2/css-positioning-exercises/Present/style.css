@@ -1,0 +1,22 @@
+#container {
+    background-color: blue;
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+#line1 {
+    width: 20px;
+    height: 400px;
+    background-color: red;
+    position: absolute;
+    left: 50px;
+}
+
+#line2 {
+    width: 400px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top: 50px;
+}

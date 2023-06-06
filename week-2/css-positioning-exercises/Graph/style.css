@@ -1,0 +1,67 @@
+#container {
+    background-color: rgb(169, 148, 211);
+    height: 300px;
+    width: 500px;
+    position: relative;
+}
+
+#money {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    font-size: larger;
+}
+  
+#time {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: larger;
+}
+  
+.bar {
+    width: 30px;
+    background-color: rgb(230, 224, 224);
+}
+  
+#bar-1 {
+    height: 60px;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+}
+  
+#bar-2 {
+    height: 160px;
+    position: absolute;
+    bottom: 15px;
+    left: 90px;
+}
+  
+#bar-3 {
+    height: 220px;
+    position: absolute;
+    bottom: 15px;
+    left: 160px;
+}
+  
+#bar-4 {
+    height: 190px;
+    position: absolute;
+    bottom: 15px;
+    left: 230px;
+}
+  
+#bar-5 {
+    height: 170px;
+    position: absolute;
+    bottom: 15px;
+    left: 300px;
+}
+  
+#bar-6 {
+    height: 100px;
+    position: absolute;
+    bottom: 15px;
+    left: 370px;
+ }
