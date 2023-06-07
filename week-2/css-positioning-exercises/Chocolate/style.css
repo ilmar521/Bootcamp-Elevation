@@ -1,0 +1,30 @@
+
+#container {
+    width: 220px;
+    height: 120px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#top-part {
+    display: flex;
+}
+
+#bottom-part {
+    display: flex;
+}
+
+#middle-part {
+    width: 220px;
+    height: 3px;
+    background-color: darkred;  
+}
+
+.piece {
+    margin: 3px;
+    width: 50px;
+    height: 50px;
+    background-color: #66320E;    
+}
