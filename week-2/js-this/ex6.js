@@ -10,7 +10,7 @@ const coffeeShop = {
     },
   
     buyBeans: function (numBeans) {
-        let totalPrice = numBeans * 5
+        const totalPrice = numBeans * 5
         if (totalPrice <= this.money) {
             this.money -= totalPrice
             this.beans += numBeans
