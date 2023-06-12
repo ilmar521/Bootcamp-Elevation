@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main_container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 15fr 1fr;
+    grid-template-areas: 
+    "m c"
+    "m i";
+}
+
+#friends_area{
+    grid-area: m;
+    display: grid;
+    background-color: rgb(184, 88, 184);
+}
+
+#friends_area > h3 {
+    margin: 10px 5px;
+}
+
+#friends_area > p {
+    background-color: plum;
+    height: 15%;
+    margin: 0px 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+#chat_area{
+    grid-area: c;
+    display: grid;
+    align-items: center;
+    background-color: rgb(240, 237, 237);
+}
+
+.text_container {
+    height: 15%;    
+    display: flex;
+    width: max-content;
+    align-items: center;
+    margin: 0px 10px;  
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+.text {
+    font-size: 20px;
+}
+
+.time {
+    font-size: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.left {
+    background-color: lightgray;
+}
+
+.right {
+    background-color: lightgreen;
+    justify-self: end;
+    
+}
+
+#input_area{
+    grid-area: i;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#send_btn {
+    background-color: rgb(184, 88, 184);
+    color: white;
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+}
