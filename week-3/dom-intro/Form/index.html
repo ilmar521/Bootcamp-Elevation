@@ -9,19 +9,17 @@
 </head>
 <body>
     
-    <form action="">
+    <div id="form">
         <label for="name">Name</label>
         <input type="text" name="name" id="name_input">  
-        <div id="birthday_salary">
-            <label for="salary">Desired Salary</label>
-            <input type="text" name="salary" id="salary_input">    
-            <label for="birthday">Birthday</label>
-            <input type="date" name="birthday" id="birthday_input"> 
-         </div>    
+        <label for="salary">Desired Salary</label>
+        <input type="number" name="salary" id="salary_input">    
+        <label for="birthday">Birthday</label>
+        <input type="date" name="birthday" id="birthday_input">  
         <label for="phone">Phone</label>
         <input type="text" name="phone" id="phone_input">    
-        <button type="submit">Submit</button>   
-    </form>
+        <button onclick="submitForm()">Submit</button>   
+    </div>
 
     <script src="script.js"></script>
 </body>
