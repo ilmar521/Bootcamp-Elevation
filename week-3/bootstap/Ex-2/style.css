@@ -1,0 +1,32 @@
+
+html,body{
+    height:100%;
+}
+
+.flex-fill {
+    flex:1;
+}
+
+.panel {
+    background-color: rgb(164, 80, 243);
+}
+
+.person {
+    background-color: rgb(214, 112, 214);
+    margin: 2px;
+    padding: 5px;
+}
+
+.header {
+    font-weight: bold;
+}
+
+.chat {
+    background-color: rgb(222, 230, 230);
+    height: 95%;
+}
+
+.input {
+    background-color: aqua;
+    height: 5%;
+}

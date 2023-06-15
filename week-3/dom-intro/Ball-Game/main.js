@@ -1,14 +1,15 @@
 const down = document.getElementById("down")
+console.log(down)
+
 const ball = document.getElementById("ball");
 const playingField = document.getElementById("playing-field")
-console.log(down)
 
 const subHeader = document.createElement("h2")
 subHeader.innerText = "Created by Kirill Lunev"
 subHeader.classList.add('sub-header')
 document.body.insertBefore(subHeader, document.body.firstChild)
 
-document.getElementById("ball").style.backgroundColor = "yellow"
+ball.style.backgroundColor = "yellow"
 
 document.addEventListener("keydown", function(event) {
     const key = event.key;
