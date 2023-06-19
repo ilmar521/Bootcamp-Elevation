@@ -10,6 +10,11 @@ const products = [
     {name: 'Logitech-Conference-Cam-BCC950', price: 500, img: 'img/5.Logitech-Conference-Cam-BCC950.jpg'},   
 ]
 
+const countNumberOfItems = function () {
+    let badgeNumberOfItems = document.getElementById('number_of_items')
+    badgeNumberOfItems.innerText = cart.length
+}
+
 const generateNextId = function () {
     let maxId = 0
     cart.forEach(item => {
@@ -34,8 +39,9 @@ const addToCart = function (event) {
             id: generateNextId(),
             name: products[index].name,
             price: products[index].price,
-        };
-        cart.push(newItem);    
+        }
+        cart.push(newItem)   
+        countNumberOfItems()
     }
 }
 
@@ -45,6 +51,7 @@ const removeFromCart = function (event) {
         cart.splice(index, 1);
     }
     renderPageCart()
+    countNumberOfItems()
 }
 
 const renderMainPage = function () {
