@@ -3,6 +3,7 @@ console.log(down)
 
 const ball = document.getElementById("ball");
 const playingField = document.getElementById("playing-field")
+const step = 15
 
 const subHeader = document.createElement("h2")
 subHeader.innerText = "Created by Kirill Lunev"
@@ -27,7 +28,7 @@ document.addEventListener("keydown", function(event) {
 const moveRight = function(){
     let left = parseInt(ball.style.left) || 0
     const ballWidth = ball.offsetWidth
-    left += 15
+    left += step
     const playingFieldWidth = playingField.offsetWidth
     if (left + ballWidth > playingFieldWidth) {
         left = playingFieldWidth - ballWidth
@@ -37,7 +38,7 @@ const moveRight = function(){
 
 const moveUp = function(){
     let top = parseInt(ball.style.top) || 0
-    top -= 15
+    top -= step
     if (top < 0) {
         top = 0
     }
@@ -46,7 +47,7 @@ const moveUp = function(){
 
 const moveLeft = function(){
     let left = parseInt(ball.style.left) || 0
-    left -= 15
+    left -= step
     if (left < 0) {
         left = 0
     }
@@ -56,7 +57,7 @@ const moveLeft = function(){
 const moveDown = function(){
     let top = parseInt(ball.style.top) || 0
     const ballHeight = ball.offsetHeight
-    top += 15
+    top += step
     const playingFieldHeight = playingField.offsetHeight
     if (top + ballHeight > playingFieldHeight) {
         top = playingFieldHeight - ballHeight
