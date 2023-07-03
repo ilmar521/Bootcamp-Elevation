@@ -7,7 +7,14 @@ let squirrel = {
     },
     "area_of_living": "forest",
     "endangered": false,
-    "preferable_food": ["nuts", "insects", "grains"],
+    "preferable_food": [
+        {"food": "nuts",
+        "percentage": 30}, 
+        {"food": "insects",
+        "percentage": 10}, 
+        {"food": "grains",
+        "percentage": 60}
+    ],
     "animal_that_eat_it": ["fox", "owl"],
     "score_of_delicious": 2,
 }
