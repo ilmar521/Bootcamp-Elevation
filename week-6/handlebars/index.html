@@ -37,29 +37,33 @@
     <div id="results"></div>
 
     <script id="results-template" type="text/x-handlebars-template">
-        {{#each apartment}}
-        <div class="result">
-            <img src="{{img}}" alt="">
-            <span class="label l-addr">Address: </span><span class="address">{{address}}</span>
-            <span class="label l-price">Price: </span><span class="price">{{price}}</span>
-            <span class="label l-rooms">Rooms: </span><span class="rooms">{{rooms}}</span>
-            {{#if parking}}
-                <i class="label l-park fa-solid fa-square-parking"></i>
-            {{else}}
-                <div class="label l-park"></div>
-            {{/if}}   
-            {{#if immediate}}
-                <div class="contact">
-                    <span>Contacts </span>   
-                    <br>   
-                    <span>name: </span><span>{{contactDetails.name}}</span>
-                    <span>email: </span><span>{{contactDetails.email}}</span>                   
-                </div>
-            {{else}}
-                <div class="contact"></div>
-            {{/if}}         
-        </div>
-        {{/each}}
+        {{#if apartment.length}}
+            {{#each apartment}}
+            <div class="result">
+                <img src="{{img}}" alt="">
+                <span class="label l-addr">Address: </span><span class="address">{{address}}</span>
+                <span class="label l-price">Price: </span><span class="price">{{price}}</span>
+                <span class="label l-rooms">Rooms: </span><span class="rooms">{{rooms}}</span>
+                {{#if parking}}
+                    <i class="label l-park fa-solid fa-square-parking"></i>
+                {{else}}
+                    <div class="label l-park"></div>
+                {{/if}}   
+                {{#if immediate}}
+                    <div class="contact">
+                        <span>Contacts </span>   
+                        <br>   
+                        <span>name: </span><span>{{contactDetails.name}}</span>
+                        <span>email: </span><span>{{contactDetails.email}}</span>                   
+                    </div>
+                {{else}}
+                    <div class="contact"></div>
+                {{/if}}         
+            </div>
+            {{/each}}
+        {{else}}
+        <div class="no-match">No matching results!</div>
+        {{/if}}     
     </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
