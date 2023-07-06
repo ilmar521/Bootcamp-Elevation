@@ -58,7 +58,14 @@
                     </div>
                 {{else}}
                     <div class="contact"></div>
-                {{/if}}         
+                {{/if}}  
+                {{#if features.length}}
+                    <ul> Additional features 
+                    {{#each features}}
+                        <li>{{this}}</li>
+                    {{/each}}  
+                    </ul> 
+                {{/if}}     
             </div>
             {{/each}}
         {{else}}
