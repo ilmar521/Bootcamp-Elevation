@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    padding: 10px;
+}
+
+#container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.card {
+    background-color: rgb(180, 174, 174);
+    height: 120px;
+    border-radius: 10px;
+}
+
+.card > p {
+    margin: 20px 5px;
+    font-size: 22px;
+}
+
+.mail {
+    color: #2B81BA;
+    text-decoration: underline;
+}
