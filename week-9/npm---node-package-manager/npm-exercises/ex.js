@@ -21,8 +21,6 @@ console.log(validator.blacklist(text, blacklist).toLowerCase())
 const makeHuman = function (numberOfHuman) {
     for (let i = 0; i < numberOfHuman; i++) {
         console.log(`${faker.person.firstName()}, ${faker.image.avatar()}, ${faker.company.name()}`)
-
-        
     }
 }
 
